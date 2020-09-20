@@ -5,7 +5,7 @@
 
 This project is meant to automate the retrieval of COVID-19 statistics, policies, and best practices. Statistics will be limited to the greater Philadelphia area. Users will have access to a desktop application that will allow them to view current statistics including: Current Case Count, Positive Case Rate, Testing Count, Testing Rate, Death Toll, etc.. User’s will also have access to practical information such as: What to Do if a Household Member has COVID, Best Practices to Limit Chance of Infection, etc.. On execution of the application a new window will be opened with the applications UI, providing a drop down menu with options of what information to view. All information will be refreshed and updated when the program is executed, pulling from a set of information resources. I will be building this application using the Netbeans IDE, the Jsoup web automation library for Java, and the Javax Swift framework to build the GUI.
 
-
+![Image of Diagram](https://github.com/peter738/COVID-19-Resource-Application/blob/master/COVID%20Resource%20App%20Diagram%20(1).jpg)
 
 ## This project will demonstrate the application of several of the course’s educational goals:
 
