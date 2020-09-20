@@ -15,3 +15,8 @@ This project is meant to automate the retrieval of COVID-19 statistics, policies
 4. Test Driven Development  - throughout the project I will be building JUnit tests because this will be my first time using some of these libraries and thorough testing will be necessary to ensure operations function as desired
 5.Debugging - Netbeans debugging tools will be used alongside the JUnit tests for more targeting problem solving
 https://github.com/peter738/COVID-19-Resource-Application
+
+
+## Running
+1. downaload this project and open in whatever editor you wish
+2. running the COVID_InformationApp file will create a window and text pulled using JSoup
