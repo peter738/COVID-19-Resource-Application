@@ -21,10 +21,11 @@ public class COVID_InformationApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException{
-        // TODO code application logic here
-        String url = "https://www.google.com/";
-        Document document = Jsoup.connect(url).get();
-        System.out.println(document.title());
+        SWING_tester st = new SWING_tester();
+        JSOUP_tester jst = new JSOUP_tester();
+        
+        String msg = jst.soupCall();
+        st.swingCall(msg);
     }
     
 }

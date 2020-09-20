@@ -17,9 +17,11 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 public class JSOUP_tester {
-    public static void main(String[] args) throws IOException{
+    
+    public String soupCall() throws IOException{
         String url = "https://www.google.com/";
         Document document = Jsoup.connect(url).get();
-        System.out.println(document.title());
+        return document.title();
     }
 }
+

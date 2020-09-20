@@ -11,13 +11,23 @@ package covid_informationapp;
  */
 
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 
 public class SWING_tester {
-    public static void main (String args[]){
-        JFrame frame = new JFrame("Switch Example Simple");
+    JFrame frame;
+    
+    public void swingCall(String msg){
+        frame = new JFrame("Switch Example Simple");
         
         frame.setSize(1000, 1000);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        JPanel jp = new JPanel();
+        frame.add(jp);
+        JLabel jl = new JLabel(msg);
+        
+        jp.add(jl);
         
         frame.setVisible(true);
     }
