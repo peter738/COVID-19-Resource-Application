@@ -15,13 +15,16 @@ import java.io.IOException;
 import javax.swing.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
 
 public class JSOUP_tester {
     
     public String soupCall() throws IOException{
-        String url = "https://www.google.com/";
+        String url = "https://www.opendataphilly.org/dataset/covid-cases/resource/cdf4a96d-3655-49bc-8490-2a73260a29a7";
         Document document = Jsoup.connect(url).get();
-        return document.title();
+        Elements cvsURL = document.select("a.resource-url-analytics");
+        String link = cvsURL.attr("href");
+        return link;
     }
 }
 

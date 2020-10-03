@@ -9,11 +9,15 @@ package covid_informationapp;
  *
  * @author ramir
  */
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 import javax.swing.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import java.net.URL;
+import java.net.URLConnection;
 
 public class COVID_InformationApp {
 
@@ -25,7 +29,13 @@ public class COVID_InformationApp {
         JSOUP_tester jst = new JSOUP_tester();
         
         String msg = jst.soupCall();
-        st.swingCall(msg);
+        
+        URL url = new URL(msg);
+        URLConnection connection = url.openConnection();
+        InputStreamReader input = new InputStreamReader(connection.getInputStream());
+        BufferedReader buff = new BufferedReader(input);
+        String content = buff.readLine();
+        st.swingCall(content);
     }
     
 }
